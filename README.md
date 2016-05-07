@@ -9,4 +9,14 @@
 	</distributionManagement>
   执行mvn clean deploy,将目录file://${project.build.directory}/mvn-repo下面的代码提交到https://github.com/hengyunabc/maven-repo.git下面
 
+2、在其他项目中应用如下代码
+        <dependency>
+            <groupId>com.dangdang</groupId>
+            <artifactId>config-toolkit-redis</artifactId>
+            <version>3.1.3-RELEASE</version>
+        </dependency>
 
+        <repository>
+            <id>wuzhongtuniu-maven-repo</id>
+            <url>https://raw.githubusercontent.com/wuzhongtuniu/mavenrepo/master/mvn-repo</url>
+        </repository>
