@@ -7,7 +7,7 @@
 			<url>file://${project.build.directory}/mvn-repo</url>
 		</repository>
 	</distributionManagement>
-  执行mvn clean deploy,将目录file://${project.build.directory}/mvn-repo下面的代码提交到https://github.com/hengyunabc/maven-repo.git下面
+  执行mvn clean deploy,将目录file://${project.build.directory}/mvn-repo下面的代码提交到https://github.com/wuzhong290/mavenrepo.git下面
 
 2、在其他项目中应用如下代码
         <dependency>
@@ -18,5 +18,5 @@
 
         <repository>
             <id>wuzhongtuniu-maven-repo</id>
-            <url>https://raw.githubusercontent.com/wuzhongtuniu/mavenrepo/master/mvn-repo</url>
+            <url>https://raw.githubusercontent.com/wuzhong290/mavenrepo/master/mvn-repo</url>
         </repository>
